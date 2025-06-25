@@ -34,6 +34,10 @@ body {
     font-size: 1.3em;
     opacity: 0.9;
 }
+.module{
+    display: grid;
+    margin:20px;
+  }
 
 .modules-grid {
     display: grid;
@@ -207,4 +211,29 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-weight: bold;
+}
+button.btn-primary {
+    background-color: #ed8c3c;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 900;
+  }
+  
+  button.btn-primary:hover, .btn-primary:active {
+    background-color: #ed8c3c;
+    transform: translateY(-2px);
+    color: aliceblue;
+  }
+  button a{
+    color: #333;
+    text-decoration: none;
+  }
+button a:hover, a:active{
+    color: white;
 }
