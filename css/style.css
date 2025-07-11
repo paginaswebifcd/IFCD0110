@@ -3,10 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*modifico el color del body,by jairo-mb*/
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-color: rgb(40,42,55);
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -16,10 +16,10 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
-
+/*modifico el color del texto,by jairo-mb*/
 .header {
     text-align: center;
-    color: white;
+    color: rgb(7, 245, 221);
     margin-bottom: 40px;
     animation: fadeInDown 1s ease-out;
 }
@@ -40,14 +40,20 @@ body {
   }
 
 .modules-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
-    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;       /* Centra verticalmente */
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;              /* Centra horizontalmente */
+    height: 100vh;             /* Ocupa toda la pantalla */
+    padding: 20px;
 }
 
+
+/*modifico color de fondo*/
 .module-card {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgb(3, 58, 53);
     border-radius: 20px;
     padding: 30px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
@@ -56,6 +62,7 @@ body {
     transition: all 0.3s ease;
     animation: fadeInUp 1s ease-out;
     animation-fill-mode: both;
+
 }
 
 .module-card:nth-child(1) { animation-delay: 0.1s; }
@@ -78,12 +85,12 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 2em;
-    color: white;
+    color:rgb(3, 58, 53);
     box-shadow: 0 10px 30px rgba(255,107,107,0.3);
 }
 
 .module-card h3 {
-    color: #333;
+    color: rgb(7, 245, 221);
     font-size: 1.5em;
     margin-bottom: 15px;
     text-align: center;
@@ -99,7 +106,7 @@ body {
     border-bottom: 1px solid #eee;
     position: relative;
     padding-left: 20px;
-    color: #555;
+    color: rgb(7, 245, 221);
     transition: color 0.3s ease;
 }
 
@@ -107,23 +114,23 @@ body {
     content: "▶";
     position: absolute;
     left: 0;
-    color: #667eea;
+    color: white;
     font-size: 0.8em;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .topics-list li:hover {
-    color: #667eea;
+    color:white;
 }
 
 .topics-list li:last-child {
     border-bottom: none;
 }
-
+/*modifico colores de la fuente*/
 .footer {
     text-align: center;
-    color: white;
+    color: rgb(7, 245, 221);
     margin-top: 40px;
     padding: 30px;
     background: rgba(255,255,255,0.1);
@@ -204,9 +211,9 @@ body {
         flex-direction: column;
     }
 }
-
+/*modifico el color del texto,by jairo-mb*/
 .highlight {
-    background: linear-gradient(120deg, #ff6b6b, #ffa726);
+    background: rgb(7, 245, 221);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -235,5 +242,128 @@ button.btn-primary {
     text-decoration: none;
   }
 button a:hover, a:active{
+    color: white;
+}
+/*comienzo la colaboración al proyecto, by jairo-mb*/
+.nav a {
+    color: rgb(7, 245, 221);
+    float: left;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+}
+
+.nav{
+    
+    
+    display: flex;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    gap: 20px;
+    padding: 5x 0px;
+    justify-content: center;
+}
+
+.nav a:hover{
+    background-color: rgb(3, 58, 53);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.index {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url("../imagenes/matrix.png"); /* Asegúrate que esta ruta sea correcta */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: justify;
+}
+#objetivo{
+    color: rgb(7, 245, 221);
+    background: rgba(255,255,255,0.2);
+       border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding-bottom: 3px;
+}
+
+
+.login-form {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none; 
+    color: rgb(7, 245, 221);
+    padding: 3px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(3, 58, 53);
+    backdrop-filter: black(5px); /* Efecto de desenfoque */
+    z-index: 999;
+}
+
+.login-form input,
+.login-form button {
+    display: inline-block;
+    width: 150px;
+    margin: 0px 0px;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 11px;
+    text-align: center;
+}
+
+.login-form input {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(7, 245, 221);
+}
+
+.login-form input::placeholder {
+    color: rgb(7, 245, 221)
+}
+
+.login-form button {
+    background-color: rgba(255, 255, 255, 0.2);
+    color:rgb(7, 245, 221);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: rgb(4, 119, 109);
+}
+
+.login-form input:hover {
+    background-color: rgb(4, 119, 109);
+}
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(7, 245, 221);
+}
+
+p{
     color: white;
 }
