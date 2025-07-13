@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura de documentos HTML</title>
+     <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+        <div class="container">
+        <div class="header">
+    <h1>Tu Opinión Cuenta</h1>
+    <br>
+     </div>
+    </div>
+     <nav class="nav">
+        <a href="index.html">Inicio</a>
+          <a href="">Elementos Multimedia</a>
+           <a href="">Accesibilidad y usabilidad</a>
+           <a href="">Herramientas de  desarrollo</a>
+    </nav><br>
+
+    <div class="module-cuestion">
+    <div class="module-card">
+      <div class="cuestionario">
+     <form action="cuestionario.php" method="post">
+      <fieldset>
+      <legend class="legend">Datos Personales</legend>
+      <label for="nombre">Nombre:</label>
+      <input type="text"  id="nombre" name="nombre" maxlength="20"><br><br>
+      <label for="apellidos">Apellidos:</label>
+      <input type="text"  id="apellidos" name="apellidos"  maxlength="60"><br><br>
+      <label for="edad">Edad:</label>
+      <input type="number"  id="edad" name="edad" required><br><br>
+
+
+      </fieldset><br><br>
+      <fieldset>
+        <legend class="legend">Cuestionario</legend>
+         <p class="pregunta">1. Valora el contenido de la página</p>
+    <label><input type="radio" name="malo" value="malo" required> Malo</label><br>
+    <label><input type="radio" name="regular" value="regular"> Regular</label><br>
+    <label><input type="radio" name="bueno" value="bueno"> Bueno</label><br>
+    <label><input type="radio" name="excelente" value="excelente"> Excelente</label><br><br>
+
+      <p class="pregunta">2. ¿Te ha sido útil el contenido?</p>
+    <label><input type="radio" name="si" value="si" required> Si</label><br>
+    <label><input type="radio" name="no" value="no"> No</label><br><br>
+
+    <p class="pregunta">3. ¿Volverías a visitar la página?</p>
+    <label><input type="radio" name="si" value="si" required> Si</label><br>
+    <label><input type="radio" name="no" value="no"> No</label><br>
+    <label><input type="radio" name="no sé" value="no sé" required> No sé</label><br><br>
+
+      <p class="pregunta">5. ¿Qué te gustaría aprender? (Selecciona hasta 3)</p>
+    <label><input type="checkbox" name="actividades[]" value="html"> HTML</label><br>
+    <label><input type="checkbox" name="actividades[]" value="css"> CSS</label><br>
+    <label><input type="checkbox" name="actividades[]" value="js"> JavaScript</label><br>
+    <label><input type="checkbox" name="actividades[]" value="php"> PHP</label><br><br>
+
+
+
+      </fieldset><br><br>
+      <fieldset>
+        <legend class="legend">Dejanos tu opinión</legend>
+        <textarea id="comentarios" name="comentarios" rows="5" cols="40" placeholder="Escribe lo que opinas aquí"></textarea>
+      </fieldset><br><br>
+      <input type="submit" value="Enviar" class="boton">
+      <input type="reset" value="Borrar" class="boton">
+
+
+     
+     </form>
+    </div>
+ 
+
+
+    
+    </div>
+    </div>
+    
+</body>
+</html>

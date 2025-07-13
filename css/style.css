@@ -245,6 +245,7 @@ button a:hover, a:active{
     color: white;
 }
 /*comienzo la colaboración al proyecto, by jairo-mb*/
+/* estilo perteneciente al archivo index*/
 .nav a {
     color: rgb(7, 245, 221);
     float: left;
@@ -286,7 +287,7 @@ button a:hover, a:active{
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-image: url("../imagenes/matrix.png"); /* Asegúrate que esta ruta sea correcta */
+    background-image: url("../imagenes/matrix.png"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -315,7 +316,7 @@ button a:hover, a:active{
     padding: 3px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(3, 58, 53);
-    backdrop-filter: black(5px); /* Efecto de desenfoque */
+    backdrop-filter: black(5px); /* efecto de desenfoque */
     z-index: 999;
 }
 
@@ -366,4 +367,92 @@ a{
 
 p{
     color: white;
+}
+/*estilo perteneciente  al archivo estructura de documentos html*/
+.codigo{
+    color: chartreuse;
+
+}
+/*estilo perteneciente a cuestionario*/
+.cuestionario {
+    color: chartreuse;
+
+}
+.legend{
+    font-weight: bold;
+    font-size: 14px;
+   color: chartreuse;
+      padding: 5px 10px;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   box-shadow: 1px 1px 4px rgba:(0,0,0,0.2)
+   
+}
+label{
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 10px;
+}
+fieldset{
+    border: 2px solid chartreuse;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+   
+}
+
+ input[type="text"],
+  input[type="number"] {
+    padding: 5px;
+    width: 250px;
+    border: 1px solid chartreuse;
+    border-radius: 5px;
+    background-color:white;
+  }
+
+  .boton {
+  color: #fff; 
+  background-color: rgb(113, 200, 27); 
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+
+.boton:hover {
+  background-color: #15d11f;
+  transform: translateY(-2px);
+}
+
+
+.boton:active {
+  background-color: #3e8e41;
+  transform: translateY(0);
+}
+textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 120px;
+  padding: 10px;
+  font-size: 10px;
+  font-family: Arial, sans-serif;
+  border: 1px solid chartreuse;
+  border-radius: 6px;
+  resize: vertical; /* permite al usuario ajustar solo la altura */
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.pregunta{
+    color: chartreuse;
 }
