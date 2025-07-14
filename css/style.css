@@ -246,6 +246,10 @@ button a:hover, a:active{
 }
 /*comienzo la colaboración al proyecto, by jairo-mb*/
 /* estilo perteneciente al archivo index*/
+body, html {
+    height: 100%;
+    margin: 0;
+}
 header{
     color: rgb(7, 245, 221) ;
     font-size: x-large;
@@ -381,10 +385,7 @@ header.no-margin-top{
 .login-form input:hover {
     background-color: rgb(4, 119, 109);
 }
-body, html {
-    height: 100%;
-    margin: 0;
-}
+
 
 a{
     text-decoration: none;
@@ -481,5 +482,9 @@ textarea {
 
 .pregunta{
     color: chartreuse;
+}
+.module-element{
+
+    color: white;
 }
 
