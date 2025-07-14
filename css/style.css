@@ -246,6 +246,31 @@ button a:hover, a:active{
 }
 /*comienzo la colaboración al proyecto, by jairo-mb*/
 /* estilo perteneciente al archivo index*/
+header{
+    color: rgb(7, 245, 221) ;
+    font-size: x-large;
+    text-align: center;
+    padding-top: 100px;
+    padding: 50px 0;
+    margin-top: 100px;
+    background-color:rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    justify-items: center;
+    align-items: center;
+    height: 150px;
+     border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+
+header.no-margin-top{
+    margin: 0px;
+    padding: 25px;
+    text-align: center;
+}
 .nav a {
     color: rgb(7, 245, 221);
     float: left;
@@ -306,7 +331,7 @@ button a:hover, a:active{
     padding-bottom: 3px;
 }
 
-
+/*estilo del login*/
 .login-form {
     position: absolute;
     top: 5px;
@@ -314,6 +339,7 @@ button a:hover, a:active{
     background: none; 
     color: rgb(7, 245, 221);
     padding: 3px;
+    padding-top: 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(3, 58, 53);
     backdrop-filter: black(5px); /* efecto de desenfoque */
@@ -456,3 +482,4 @@ textarea {
 .pregunta{
     color: chartreuse;
 }
+
